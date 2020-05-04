@@ -1,0 +1,93 @@
+@import 'vars';
+@import 'fonts';
+@import 'global';
+//-----------------------------------------------------------------------------------------------------------
+//
+//                                                    START CODE
+//
+//-----------------------------------------------------------------------------------------------------------
+.main-page{
+  background-color: #181617;
+  position: relative;
+  color: $gold;
+  display: flex;
+  background-position: right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 186px;
+  padding-bottom: 174px;
+}
+.main-page-crown{
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 59px;
+  height: 59px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 31px;
+}
+.main-page__inner{
+  position: relative;
+  padding-left: 115px;
+}
+.main-page__city{
+  line-height: 24px;
+  margin-bottom: 18px;
+}
+.main-page__title{
+  font-size: 52px;
+  line-height: 67px;
+  color: #FFFFFF;
+  font-family: 'Yeseva One', cursive;
+  max-width: 351px;
+  margin-bottom: 31px;
+}
+.main-page__text{
+  line-height: 24px;
+  max-width: 273px;
+  margin-bottom: 39px;
+}
+.main-page__list{
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  a{
+    color: #ffffff;
+  }
+  li + li{
+    margin-top: 7px;
+  }
+  &:before{
+    content: '';
+    position: absolute;
+    top: -110%;
+    height: 77px;
+    width: 1px;
+    background-color: #ffffff;
+  }
+}
+//-----------------------------------------------------------------------------------------------------------
+.pets{
+  background-color: #1F1C1D;
+  padding-top: 223px;
+  padding-bottom: 42px;
+}
+.pets-title{
+  margin-bottom: 23px;
+}
+.pets-suptitle{
+  max-width: 516px;
+  margin: 0 auto 38px;
+}
+
+//-----------------------------------------------------------------------------------------------------------
+//
+//                                                    END CODE
+//
+//-----------------------------------------------------------------------------------------------------------
+@import 'media';

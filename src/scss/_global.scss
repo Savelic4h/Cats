@@ -1,0 +1,82 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+button:focus,
+input:focus {
+  outline: transparent;
+}
+
+html,
+body {
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  // font-family: 'Yeseva One', cursive;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+}
+.container{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.btn{
+  padding: 18px 35px 17px ;
+  color: #ffffff;
+  font-weight: 700;
+  border: 0.5px solid $gold;
+  transition: all .2s;
+  &:active{
+    border: 0.5px solid #fff;
+  }
+}
+.title{
+  font-size: 36px;
+  line-height: 42px;
+  font-family: 'Yeseva One', cursive;
+  text-align: center;
+}
+.suptitle{
+  font-weight: 300;
+  text-align: center;
+  margin: 0 auto;
+  color: $gold;
+}
